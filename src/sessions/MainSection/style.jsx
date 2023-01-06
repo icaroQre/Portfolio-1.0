@@ -4,7 +4,11 @@ export const MainContainer = styled.div`
 
     width: 100vw;
     height: 100vh;
-    background-color: ${({ theme }) => theme.primary};
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+    background: -moz-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+    background: -webkit-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#000000", GradientType=1 );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,20 +27,24 @@ export const MainText = styled.div`
     }
 
     #name{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 4rem;
         font-weight: 600;
         padding-bottom: 1rem;
         padding-left: 10%;
-        color: ${({ theme }) => theme.secondary};
+        color: ${({ theme }) => theme.primary};
     }
 
     #title{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
         font-weight: 300;
         padding-left: 10%;
-        color: ${({ theme }) => theme.textPrimary};
+        color: ${({ theme }) => theme.primary};
+        
+        span{
+            background-color: ${({ theme }) => theme.tertiary};
+        }
     }
 `;
 
@@ -72,4 +80,5 @@ export const ArrowDownStyled = styled.div`
     right: auto;
     animation: ${jumping} 2s infinite;
     z-index: 0;
+    color: ${({ theme }) => theme.primary};
 `;

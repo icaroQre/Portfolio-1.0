@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
 
     width: 100vw;
-    background-color: ${( { theme } ) => theme.primary};
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -50,14 +49,13 @@ export const MenuStyled = styled.ul`
     transition: all ease 0.5s;
 
     li{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         text-decoration: none;
         padding: 16px 24px;
         outline: none;
-        color: ${({theme}) => theme.secondary};
+        color: ${({theme}) => theme.primary};
         transition: all ease 0.5s;
-
 
         :hover{
             cursor: pointer;
@@ -71,7 +69,7 @@ export const MenuStyled = styled.ul`
         position: absolute;
         top: calc(68px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
-        background-color: ${({ theme }) => theme.primary};
+        background-color: ${({ theme }) => theme.secondary};
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
@@ -81,7 +79,7 @@ export const MenuStyled = styled.ul`
         padding:0;
 
         li{
-            color: ${({ theme }) => theme.secondary};
+            color: ${({ theme }) => theme.primary};
             width: 100vw;
             
             :hover{
