@@ -4,11 +4,7 @@ export const MainContainer = styled.div`
 
     width: 100vw;
     height: 100vh;
-    background: hsla(0, 0%, 0%, 1);
-    background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#000000", GradientType=1 );
+    background-image: linear-gradient(90deg,#151515,#000000);
     display: flex;
     align-items: center;
     justify-content: center;
