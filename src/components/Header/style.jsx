@@ -50,6 +50,7 @@ export const MenuStyled = styled.ul`
     transition: all ease 0.5s;
 
     li{
+        font-family: 'Raleway', sans-serif;
         font-size: 1.2rem;
         text-decoration: none;
         padding: 16px 24px;

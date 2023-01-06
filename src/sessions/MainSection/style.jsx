@@ -23,6 +23,7 @@ export const MainText = styled.div`
     }
 
     #name{
+        font-family: 'Raleway', sans-serif;
         font-size: 4rem;
         font-weight: 600;
         padding-bottom: 1rem;
@@ -31,6 +32,7 @@ export const MainText = styled.div`
     }
 
     #title{
+        font-family: 'Raleway', sans-serif;
         font-size: 2rem;
         font-weight: 300;
         padding-left: 10%;
