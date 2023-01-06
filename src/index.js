@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import GlobalStyle from "./styles/GlobalStyle";
+import { ThemeProvider } from 'styled-components';
+import ResetCSS from './styles/ResetCSS';
+
+const theme = {
+  primary: "#FFFCFF",
+  secondary: "#3B2E2B",
+  tertiary: "#473733",
+  textPrimary: "#2F2522"
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <ResetCSS />
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
