@@ -28,7 +28,7 @@ export const MainText = styled.div`
         font-weight: 600;
         padding-bottom: 1rem;
         padding-left: 10%;
-        color: ${({ theme }) => theme.primary};
+        color: ${({ theme }) => theme.primary}; 
     }
 
     #title{

@@ -8,7 +8,7 @@ function MainSection () {
         <>
         <MainContainer>
             <MainText>
-                <p id="name"> Ícaro Queiroz . </p>
+                <p id="name"> Ícaro Queiroz; </p>
                 <div id="title"> <span> &lt; Desenvolvedor /&gt; </span> </div>
             </MainText>
             <MainImage>

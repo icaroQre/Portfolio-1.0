@@ -3,8 +3,22 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
     * {
-        padding: 0;
-        margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: ${({ theme }) => theme.secondary};
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+    width: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.secondary};
+    }
+
+    *::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.secondaryShadow};
+    border-radius: 20px;
     }
 
     body{

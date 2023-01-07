@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
 
+    background-image: linear-gradient(90deg,#151515,#000000);
     width: 100vw;
     display: flex;
     align-items: center;
