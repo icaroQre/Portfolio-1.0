@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const SkillContainer = styled.div`
     
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #151515;
+    background-image: linear-gradient(90deg,#151515,#000000);
+
 `;
 
-export const AboutTextContainer = styled.div`
+export const SkillTextContainer = styled.div`
     
     width: 50vw;
     max-height: 100vh;
@@ -23,7 +24,7 @@ export const AboutTextContainer = styled.div`
 
 `;
 
-export const AboutTitle = styled.div`
+export const SkillTitle = styled.div`
 
     font-family: 'Montserrat';
     font-size: 2rem;
@@ -33,7 +34,7 @@ export const AboutTitle = styled.div`
 
 `;
 
-export const AboutText = styled.p`
+export const SkillText = styled.p`
 
     font-size: 1.5rem;
     font-weight: 400;
@@ -51,10 +52,13 @@ export const Contrast = styled.span`
 
 `;
 
-export const AboutImage = styled.div`
+export const SkillImage = styled.div`
 
     width: 50vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 900px) {
         display: none;

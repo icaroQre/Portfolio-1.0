@@ -10,7 +10,8 @@ const theme = {
   primary: "#F5F5F5",
   secondary: "#0A0A0A",
   tertiary: "#1F51FF",
-  secondaryShadow: "#1F1F1F"
+  secondaryLight: "#1F1F1F",
+  textPrimary: "#7A7A7A"
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

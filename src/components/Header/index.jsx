@@ -19,11 +19,11 @@ function Header () {
             </MobileMenuStyled>
 
             <MenuStyled visible={ visible }>
-                <li> Sobre <AiFillBook /> </li> 
-                <li> Conhecimentos <GoGlobe /> </li> 
-                <li> Projetos <GiGears /> </li> 
-                <li> Ver o código <AiFillEye /> </li> 
-                <li> Contato <AiFillPhone /> </li> 
+                <li onClick={toggleMenu} visible={ visible }> Sobre <AiFillBook /> </li> 
+                <li onClick={toggleMenu} visible={ visible }> Habilidades <GoGlobe /> </li> 
+                <li onClick={toggleMenu} visible={ visible }> Projetos <GiGears /> </li> 
+                <li onClick={toggleMenu} visible={ visible }> Ver o código <AiFillEye /> </li> 
+                <li onClick={toggleMenu} visible={ visible }> Contato <AiFillPhone /> </li> 
             </MenuStyled>
         </HeaderStyled>
     )

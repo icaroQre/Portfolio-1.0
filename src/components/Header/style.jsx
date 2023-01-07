@@ -15,6 +15,8 @@ export const HeaderStyled = styled.header`
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
+        background-color: transparent;
+        background-image: none;
     }
 `;
 
@@ -70,7 +72,11 @@ export const MenuStyled = styled.ul`
         position: absolute;
         top: calc(68px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
-        background-color: ${({ theme }) => theme.secondary};
+        background: rgba(10, 10, 10, 0.83);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.4px);
+        -webkit-backdrop-filter: blur(10.4px);
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;

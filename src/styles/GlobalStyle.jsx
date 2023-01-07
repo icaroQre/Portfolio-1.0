@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.secondaryShadow};
+    background-color: ${({ theme }) => theme.secondaryLight};
     border-radius: 20px;
     }
 

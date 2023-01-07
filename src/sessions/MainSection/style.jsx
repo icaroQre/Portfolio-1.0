@@ -2,12 +2,17 @@ import styled, { keyframes } from "styled-components";
 
 export const MainContainer = styled.div`
 
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background-image: linear-gradient(90deg,#151515,#000000);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
 export const MainText = styled.div`
@@ -25,7 +30,7 @@ export const MainText = styled.div`
     #name{
         font-family: 'Montserrat', sans-serif;
         font-size: 4rem;
-        font-weight: 600;
+        font-weight: 500;
         padding-bottom: 1rem;
         padding-left: 10%;
         color: ${({ theme }) => theme.primary}; 
@@ -50,7 +55,7 @@ export const MainImage = styled.div`
     height: 100vh;
 
     @media (max-width: 900px) {
-        display: none;
+        height: 50vh;
     }
 `;
 
