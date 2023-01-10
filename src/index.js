@@ -7,11 +7,11 @@ import { ThemeProvider } from 'styled-components';
 import ResetCSS from './styles/ResetCSS';
 
 const theme = {
-  primary: "#F5F5F5",
-  secondary: "#0A0A0A",
+  primary: "#000000",
+  secondary: "#FFFFFF",
   tertiary: "#1F51FF",
   secondaryLight: "#1F1F1F",
-  textPrimary: "#7A7A7A"
+  textPrimary: "#999999"
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

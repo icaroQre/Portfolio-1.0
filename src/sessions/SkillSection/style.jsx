@@ -3,9 +3,12 @@ import styled from "styled-components";
 export const SkillContainer = styled.div`
     
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(90deg,#151515,#000000);
+    width: auto;
+    height: auto;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 
 `;
 
@@ -20,6 +23,7 @@ export const SkillTextContainer = styled.div`
 
     @media (max-width: 900px) {
         width: 100vw;
+        height: auto;
     }
 
 `;
@@ -29,6 +33,7 @@ export const SkillTitle = styled.div`
     font-family: 'Montserrat';
     font-size: 2rem;
     padding-bottom: 20vh;
+    padding-top: 10vh;
     padding-left: 10%;
     padding-right: 10%;
 
@@ -43,6 +48,7 @@ export const SkillText = styled.p`
     letter-spacing: 0.1vw;
     line-height: 2rem;
     color: ${({ theme }) => theme.textPrimary};
+    padding-bottom: 10vh;
 
 `;
 
@@ -61,7 +67,11 @@ export const SkillImage = styled.div`
     justify-content: center;
 
     @media (max-width: 900px) {
-        display: none;
+        max-height: 50vh;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
     }
 
 `;

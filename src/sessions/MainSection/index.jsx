@@ -1,5 +1,5 @@
 import React from "react";
-import { MainContainer, MainImage, MainText, ArrowDownStyled } from "./style"
+import { MainContainer, MainImage, MainText, ArrowDownStyled, TypeWriter } from "./style"
 import { RiArrowDownSLine } from "react-icons/ri";
 
 function MainSection () {
@@ -8,8 +8,10 @@ function MainSection () {
         <>
         <MainContainer>
             <MainText>
-                <p id="name"> Ícaro Queiroz; </p>
-                <div id="title"> <span> &lt; Desenvolvedor /&gt; </span> </div>
+                <div>
+                    <p id="name"> Ícaro Queiroz </p>
+                    <TypeWriter id="title"> <p>&lt; Desenvolvedor /&gt;</p> </TypeWriter>
+                </div>
             </MainText>
             <MainImage>
 

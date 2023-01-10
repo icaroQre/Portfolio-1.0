@@ -15,7 +15,7 @@ function Header () {
     return(
         <HeaderStyled>
             <MobileMenuStyled onClick={toggleMenu} visible={ visible }>
-                <AiOutlineMenu style={{fontSize: "36px", color: "#F5F5F5" }} />
+                <AiOutlineMenu style={{fontSize: "36px", color: "#FFFFFF" }} />
             </MobileMenuStyled>
 
             <MenuStyled visible={ visible }>

@@ -1,10 +1,11 @@
 import { createGlobalStyle } from "styled-components";
+import { gradient } from "../sessions/MainSection/style";
 
 const GlobalStyle = createGlobalStyle`
 
     * {
     scrollbar-width: thin;
-    scrollbar-color: ${({ theme }) => theme.secondary};
+    scrollbar-color: ${({ theme }) => theme.primary};
     }
 
     /* Works on Chrome, Edge, and Safari */
@@ -13,17 +14,21 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.secondary};
+    background: ${({ theme }) => theme.primary};
     }
 
     *::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.secondaryLight};
+    background-color: ${({ theme }) => theme.textPrimary};
     border-radius: 20px;
     }
 
     body{
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
+        background: linear-gradient(90deg, #000000, #050505, #111111, #151515);
+        background-size: 400% 400%;
+        animation: ${gradient} 15s ease infinite;
+        
     }
 
 `;

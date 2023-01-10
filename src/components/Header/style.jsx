@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import { gradient } from "../../sessions/MainSection/style";
 
 export const HeaderStyled = styled.header`
 
-    background-image: linear-gradient(90deg,#151515,#000000);
+    background: linear-gradient(90deg, #000000, #050505, #111111, #151515);
+    background-size: 400% 400%;
+    animation: ${gradient} 15s ease infinite;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -11,7 +14,7 @@ export const HeaderStyled = styled.header`
     top: 0;
     left: 0;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1025px) {
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
@@ -29,7 +32,7 @@ export const MobileMenuStyled = styled.div`
         transform: rotateZ(${({ visible }) => visible ? "90deg" : "0deg" });
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1025px) {
         display: flex;
         padding: 16px;
         cursor: pointer;
@@ -53,21 +56,21 @@ export const MenuStyled = styled.ul`
 
     li{
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-decoration: none;
         padding: 16px 24px;
         outline: none;
-        color: ${({theme}) => theme.primary};
+        color: ${({theme}) => theme.secondary};
         transition: all ease 0.5s;
 
         :hover{
             cursor: pointer;
-            background-color: ${({ theme }) => theme.tertiary};
+            background-color: ${({ theme }) => theme.secondary};
             color: ${({ theme }) => theme.primary};
         }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1025px) {
 
         position: absolute;
         top: calc(68px);
@@ -86,11 +89,11 @@ export const MenuStyled = styled.ul`
         padding:0;
 
         li{
-            color: ${({ theme }) => theme.primary};
+            color: ${({ theme }) => theme.secondary};
             width: 100vw;
             
             :hover{
-                background-color: ${({ theme }) => theme.tertiary};
+                background-color: ${({ theme }) => theme.secondary};
                 color: ${({ theme }) => theme.primary};
             }
         }
