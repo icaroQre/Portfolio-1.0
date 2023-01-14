@@ -23,6 +23,7 @@ export const AboutContainer = styled.div`
 
         @media (max-width: 1025px) {
         display: block;
+        visibility: ${({ visible }) => visible ? "hidden" : "visible" };
     }
     }
 `;
@@ -35,6 +36,8 @@ export const AboutTextContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 5vh 0;
+    font-size: 30px;
 
     @media (max-width: 1025px) {
         height: auto;
@@ -46,41 +49,48 @@ export const AboutTextContainer = styled.div`
 export const AboutTitle = styled.div`
 
     font-family: 'Montserrat';
+    margin-bottom: 64px;
+    padding: 0 10%;
+    color: ${({ theme }) => theme.secondary};
     font-size: 2rem;
-    margin-bottom: 8rem;
-    padding: 0 10%;
-    color: ${({ theme }) => theme.secondary};
+
+    @media (max-width: 1025px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 `;
 
-export const AboutText1 = styled.p`
+export const AboutTextFirst = styled.div`
 
-    font-size: 1.2rem;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
     color: ${({ theme }) => theme.textPrimary};
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    font-size: 1rem;
+
+    @media (max-width: 1025px) {
+        font-size: 1rem;
+    }
 
 `;
 
-export const AboutText2 = styled.p`
+export const AboutTextSecond = styled.div`
 
-    font-size: 1.2rem;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
     color: ${({ theme }) => theme.textPrimary};
+    font-size: 1rem;
 
-`;
-
-export const Contrast = styled.span`
-
-    font-weight: 500;
-    color: ${({ theme }) => theme.secondary};
+    @media (max-width: 1025px) {
+        font-size: 1rem;
+    }
 
 `;
 
@@ -93,8 +103,9 @@ export const AboutImage = styled.div`
     justify-content: center;
 
     @media (max-width: 1025px) {
-        height: 50vh;
+        height: 15vh;
         width: 100vw;
+        padding: 5vh 0;
     }
 
 `;

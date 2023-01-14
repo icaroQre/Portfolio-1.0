@@ -3,9 +3,7 @@ import { gradient } from "../../sessions/MainSection/style";
 
 export const HeaderStyled = styled.header`
 
-    background: linear-gradient(90deg, #000000, #050505, #111111, #151515);
-    background-size: 400% 400%;
-    animation: ${gradient} 15s ease infinite;
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -28,7 +26,7 @@ export const MobileMenuStyled = styled.div`
     display: none;
 
     :hover{
-    
+
         transform: rotateZ(${({ visible }) => visible ? "90deg" : "0deg" });
     }
 
@@ -55,18 +53,17 @@ export const MenuStyled = styled.ul`
     transition: all ease 0.5s;
 
     li{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         text-decoration: none;
         padding: 16px 24px;
         outline: none;
         color: ${({theme}) => theme.secondary};
         transition: all ease 0.5s;
-
+        border-bottom: solid transparent 3px;
         :hover{
             cursor: pointer;
-            background-color: ${({ theme }) => theme.secondary};
-            color: ${({ theme }) => theme.primary};
+            border-color: ${({ theme }) => theme.secondary};
         }
     }
 
@@ -75,8 +72,7 @@ export const MenuStyled = styled.ul`
         position: absolute;
         top: calc(68px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
-        background: rgba(10, 10, 10, 0.83);
-        border-radius: 16px;
+        background: rgba(11, 11, 11, 0.75);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10.4px);
         -webkit-backdrop-filter: blur(10.4px);

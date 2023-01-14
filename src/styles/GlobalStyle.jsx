@@ -25,10 +25,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
-        background: linear-gradient(90deg, #000000, #050505, #111111, #151515);
-        background-size: 400% 400%;
-        animation: ${gradient} 15s ease infinite;
-        
+        background-image: linear-gradient(90deg,#151515,#000);
     }
 
 `;

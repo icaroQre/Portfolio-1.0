@@ -44,7 +44,7 @@ export const MainText = styled.div`
     }
 
     #name{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 4rem;
         font-weight: 500;
         padding-bottom: 1rem;
@@ -67,8 +67,8 @@ export const TypeWriter = styled.div`
 
     p{
         font-size: 2rem;
-        color: ${({ theme }) => theme.secondary};
-        font-family: 'Montserrat', sans-serif;
+        color: ${({ theme }) => theme.textPrimary};
+        font-family: 'Poppins', sans-serif;
         font-weight: 300;
         overflow: hidden;
         border-right: .15em solid orange;
@@ -106,12 +106,12 @@ const jumping = keyframes`
 `;
 
 export const ArrowDownStyled = styled.div`
-
-    position: fixed;
-    top: 95vh;
+    position: absolute;
+    top: 90vh;
     left: auto;
     right: auto;
     animation: ${jumping} 2s infinite;
     z-index: 0;
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.textPrimary};
+    visibility: ${({ visible }) => visible ? "hidden" : "visible" };
 `;

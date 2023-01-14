@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import SkillSwiper from "../../components/SkillSwiper";
-import { AboutContainer, AboutText1, AboutText2, AboutImage, AboutTextContainer, AboutTitle, Contrast } from "./style";
+import { AboutContainer, AboutTextFirst, AboutTextSecond, AboutImage, AboutTextContainer, AboutTitle, } from "./style";
+import { AuthContext } from "../../providers/auth";
+import Contrast from "../../components/Contrast";
 
 function AboutSection () {
+
+    const { menuVisible } = useContext(AuthContext);
+
     return(
-        <AboutContainer>
+
+        <AboutContainer visible={ menuVisible } >
             <div id="desktop">
             <AboutImage>
                 <SkillSwiper size="25vh" color="#FFFFFF"/>
@@ -12,14 +18,14 @@ function AboutSection () {
             </div>
             <AboutTextContainer>
                 <AboutTitle> &lt; Sobre mim /&gt; </AboutTitle>
-                <AboutText1> 
-                    Olá, meu nome é <Contrast>Ícaro Queiroz Reccacnello</Contrast>. Tenho 19 anos, atualmente estudante de <Contrast>Ciência da Computação</Contrast> pela UENP (Universidade Estadual do Norte do Paraná),
-                    apaixonado por desenvolvimento e com o foco em <Contrast>Front-End</Contrast> aqui você pode conhecer um pouco dos meus projetos. 
-                </AboutText1>
-                <AboutText2> 
-                    Conhecimento em <Contrast>HTML5</Contrast>, <Contrast>CSS3</Contrast>, <Contrast>JavaScript</Contrast> 
-                     e Frameworks e bibliotecas, como <Contrast>React JS</Contrast> e <Contrast>Styled-Components</Contrast>
-                </AboutText2>
+                <AboutTextFirst> 
+                    <p> Olá, meu nome é <Contrast text="Ícaro Queiroz Reccanello"/>. Tenho 19 anos, atualmente estudante de <Contrast text="Ciência da Computação"/> pela UENP (Universidade Estadual do Norte do Paraná),
+                    apaixonado por desenvolvimento e com o foco em <Contrast text="Front-End"/> aqui você pode conhecer um pouco dos meus projetos. </p> 
+                </AboutTextFirst>
+                <AboutTextSecond> 
+                    Conhecimento em <Contrast text="HTML5"/>, <Contrast text="CSS3"/>, <Contrast text="Java Script"/> 
+                    e Frameworks e bibliotecas, como <Contrast text="React JS"/> e <Contrast text="Styled-Components"/>
+                </AboutTextSecond>
             </AboutTextContainer>
             <div id="mobile">
             <AboutImage>

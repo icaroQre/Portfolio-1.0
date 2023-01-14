@@ -1,8 +1,11 @@
-import React from "react";
-import { MainContainer, MainImage, MainText, ArrowDownStyled, TypeWriter } from "./style"
-import { RiArrowDownSLine } from "react-icons/ri";
+import React, { useContext } from "react";
+import { MainContainer, MainImage, MainText, TypeWriter, ArrowDownStyled } from "./style"
+import { RiArrowDownSLine } from "react-icons/ri"
+import { AuthContext } from "../../providers/auth";
 
 function MainSection () {
+
+    const { menuVisible } = useContext(AuthContext);
 
     return(
         <>
@@ -16,7 +19,7 @@ function MainSection () {
             <MainImage>
 
             </MainImage>
-            <ArrowDownStyled>
+            <ArrowDownStyled visible={ menuVisible }>
                 <RiArrowDownSLine style={{fontSize: "36px"}}/>
             </ArrowDownStyled>
             </MainContainer>

@@ -5,13 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import GlobalStyle from "./styles/GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import ResetCSS from './styles/ResetCSS';
+import { AuthProvider } from './providers/auth';
 
 const theme = {
   primary: "#000000",
   secondary: "#FFFFFF",
   tertiary: "#1F51FF",
   secondaryLight: "#1F1F1F",
-  textPrimary: "#999999"
+  textPrimary: "#AAAAAA"
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +21,9 @@ root.render(
     <ThemeProvider theme={theme}>
       <ResetCSS />
       <GlobalStyle />
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

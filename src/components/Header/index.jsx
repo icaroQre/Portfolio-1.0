@@ -1,29 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { HeaderStyled, MenuStyled, MobileMenuStyled } from "./style";
 import { AiOutlineMenu, AiFillBook, AiFillEye, AiFillPhone } from "react-icons/ai";
 import { GoGlobe } from "react-icons/go";
 import { GiGears } from "react-icons/gi";
+import { AuthContext } from "../../providers/auth";
 
 function Header () {
 
-    const [visible, setVisible] = useState(false);
+    const { menuVisible, setMenuVisible } = useContext(AuthContext);
 
     const toggleMenu = () => {
-        setVisible(!visible);
+        setMenuVisible(!menuVisible);
     }
 
     return(
         <HeaderStyled>
-            <MobileMenuStyled onClick={toggleMenu} visible={ visible }>
+            <MobileMenuStyled onClick={toggleMenu} visible={ menuVisible }>
                 <AiOutlineMenu style={{fontSize: "36px", color: "#FFFFFF" }} />
             </MobileMenuStyled>
 
-            <MenuStyled visible={ visible }>
-                <li onClick={toggleMenu} visible={ visible }> Sobre <AiFillBook /> </li> 
-                <li onClick={toggleMenu} visible={ visible }> Habilidades <GoGlobe /> </li> 
-                <li onClick={toggleMenu} visible={ visible }> Projetos <GiGears /> </li> 
-                <li onClick={toggleMenu} visible={ visible }> Ver o código <AiFillEye /> </li> 
-                <li onClick={toggleMenu} visible={ visible }> Contato <AiFillPhone /> </li> 
+            <MenuStyled visible={ menuVisible }>
+                <li onClick={toggleMenu} visible={ menuVisible }> Sobre </li> 
+                <li onClick={toggleMenu} visible={ menuVisible }> Habilidades </li> 
+                <li onClick={toggleMenu} visible={ menuVisible }> Projetos </li> 
+                <li onClick={toggleMenu} visible={ menuVisible }> Ver o código </li> 
+                <li onClick={toggleMenu} visible={ menuVisible }> Contato </li> 
             </MenuStyled>
         </HeaderStyled>
     )

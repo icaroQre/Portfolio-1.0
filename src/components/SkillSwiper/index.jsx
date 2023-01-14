@@ -27,6 +27,7 @@ const SkillSwiper = (props) => {
           type: 'bullets',
           clickable: true,
         }}
+        spaceBetween={100}
     >
       <SwiperSlide style={slideStyle}> <FaReact color = {props.color} fontSize = {props.size} /> </SwiperSlide>
       <SwiperSlide style={slideStyle}> <FaGithub color = {props.color} fontSize = {props.size} /> </SwiperSlide>
