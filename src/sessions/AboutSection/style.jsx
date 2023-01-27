@@ -54,7 +54,6 @@ export const AboutTitle = styled.div`
     color: ${({ theme }) => theme.secondary};
     font-size: 4rem;
     font-weight: 400;
-    letter-spacing: 5px;
 
     @media (max-width: 1025px) {
         margin-left: auto;

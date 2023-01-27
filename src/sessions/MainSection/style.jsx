@@ -35,9 +35,8 @@ export const MainText = styled.div`
 
     #name{
         
-        letter-spacing: 25px;
         font-size: 8rem;
-        font-weight: 600;
+        font-weight: 500;
         padding-bottom: 1.5rem;
         color: ${({ theme }) => theme.secondary}; 
 
@@ -62,10 +61,9 @@ const blinkCaret = keyframes`
 export const TypeWriter = styled.div`
 
     p{  
-        letter-spacing: 5px;
         font-size: 3rem;
         color: ${({ theme }) => theme.secondary};
-        font-weight: 400;
+        font-weight: 300;
         overflow: hidden;
         border-right: .15em solid white;
         white-space: nowrap;

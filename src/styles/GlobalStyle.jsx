@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Gumok', 'sans-serif';
+        font-family: 'Rajdhani', sans-serif;
         overflow-x: hidden;
         background-image: linear-gradient(90deg,#151515,#000);
     }
