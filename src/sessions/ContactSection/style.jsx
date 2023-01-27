@@ -8,6 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 
     p{
         margin-bottom: 32px;
@@ -73,7 +74,7 @@ export const ContactIcons = styled.div`
 
     li{
         list-style: none;
-        transition: all ease 0.5s;
+        transition: all ease-out 0.3s;
 
         :hover{
             cursor: pointer;

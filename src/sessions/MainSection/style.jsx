@@ -1,17 +1,5 @@
 import styled, { keyframes } from "styled-components";
-
-export const gradient = keyframes`
-   
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-`;
+import background from "../../assets/images/background2.jpg"
 
 export const MainContainer = styled.div`
 
@@ -21,6 +9,8 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background-image: url(${background});
+    background-size: cover;
 
     @media (max-width: 1025px) {
         flex-direction: column;
@@ -45,10 +35,15 @@ export const MainText = styled.div`
 
     #name{
         font-family: 'Poppins', sans-serif;
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 500;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
         color: ${({ theme }) => theme.secondary}; 
+
+        @media (max-width:1025px) {
+            font-size: 4rem;
+            padding-bottom: 1rem;
+        }
     }
 `;
 
@@ -66,8 +61,8 @@ const blinkCaret = keyframes`
 export const TypeWriter = styled.div`
 
     p{
-        font-size: 2rem;
-        color: ${({ theme }) => theme.textPrimary};
+        font-size: 2.5rem;
+        color: ${({ theme }) => theme.secondary};
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         overflow: hidden;
@@ -77,6 +72,10 @@ export const TypeWriter = styled.div`
         animation: 
         ${typing} 8s steps(20) infinite,
         ${blinkCaret} .5s step-end infinite;
+
+        @media (max-width:1025px) {
+            font-size: 2rem;
+        }
     }
 `;
 

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MainContainer, MainImage, MainText, TypeWriter, ArrowDownStyled } from "./style"
 import { RiArrowDownSLine } from "react-icons/ri"
-import { AuthContext } from "../../providers/auth";
+import { AuthContext } from "../../providers/auth"
 
 function MainSection () {
 

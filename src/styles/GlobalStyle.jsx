@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { gradient } from "../sessions/MainSection/style";
 
 const GlobalStyle = createGlobalStyle`
 

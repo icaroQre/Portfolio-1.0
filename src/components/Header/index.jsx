@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { HeaderStyled, MenuStyled, MobileMenuStyled } from "./style";
-import { AiOutlineMenu, AiFillBook, AiFillEye, AiFillPhone } from "react-icons/ai";
-import { GoGlobe } from "react-icons/go";
-import { GiGears } from "react-icons/gi";
+import { AiOutlineMenu } from "react-icons/ai";
 import { AuthContext } from "../../providers/auth";
 
 function Header () {
@@ -16,7 +14,7 @@ function Header () {
     return(
         <HeaderStyled>
             <MobileMenuStyled onClick={toggleMenu} visible={ menuVisible }>
-                <AiOutlineMenu style={{fontSize: "36px", color: "#FFFFFF" }} />
+                <AiOutlineMenu style={{fontSize: "36px", color: "#FFFFFF", stroke: "#000000", strokeWidth: "20px" }} />
             </MobileMenuStyled>
 
             <MenuStyled visible={ menuVisible }>

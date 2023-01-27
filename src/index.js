@@ -12,7 +12,8 @@ const theme = {
   secondary: "#FFFFFF",
   tertiary: "#1F51FF",
   secondaryLight: "#1F1F1F",
-  textPrimary: "#AAAAAA"
+  textPrimary: "#AAAAAA",
+  textSecondary: "#666666"
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

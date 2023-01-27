@@ -3,7 +3,7 @@ import Contrast from "../../components/Contrast";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai"
 import { FaDiscord } from "react-icons/fa"
 import { IoLogoWhatsapp } from "react-icons/io"
-import { Container, Title, Text, ContactPhoto, ContactIcons, EmailStyled } from "./style"
+import { Container, Text, ContactPhoto, ContactIcons, EmailStyled } from "./style"
 import photo from "../../assets/images/profile.jpg";
 
 function ContactSection () {

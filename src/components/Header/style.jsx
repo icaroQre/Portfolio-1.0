@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { gradient } from "../../sessions/MainSection/style";
 
 export const HeaderStyled = styled.header`
 
-    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgba(11, 11, 11, 0.7);
     width: 100vw;
     display: flex;
     align-items: center;
