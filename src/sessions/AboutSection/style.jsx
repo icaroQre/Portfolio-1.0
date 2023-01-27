@@ -49,6 +49,7 @@ export const AboutTextContainer = styled.div`
 
 export const AboutTitle = styled.div`
 
+    font-family: 'Rajdhani', sans-serif;
     margin-bottom: 5rem;
     padding: 0 10%;
     color: ${({ theme }) => theme.secondary};

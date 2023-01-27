@@ -35,6 +35,7 @@ export const MainText = styled.div`
 
     #name{
         
+        font-family: 'Rajdhani', sans-serif;
         font-size: 8rem;
         font-weight: 500;
         padding-bottom: 1.5rem;
@@ -61,6 +62,7 @@ const blinkCaret = keyframes`
 export const TypeWriter = styled.div`
 
     p{  
+        font-family: 'Rajdhani', sans-serif;
         font-size: 3rem;
         color: ${({ theme }) => theme.secondary};
         font-weight: 300;
