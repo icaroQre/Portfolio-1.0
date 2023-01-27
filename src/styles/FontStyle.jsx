@@ -6,7 +6,7 @@ const FontStyle = createGlobalStyle`
 @font-face {
 
   font-family: 'Gumok';
-  src: url(${Gumok}) format('opentype')
+  src: url(${Gumok})
 
 }
 `;

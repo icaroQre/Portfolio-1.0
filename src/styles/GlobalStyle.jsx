@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
     scrollbar-color: ${({ theme }) => theme.primary};
     }
 
-    /* Works on Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
     width: 12px;
     }
@@ -22,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Gumok', sans-serif;
+        font-family: 'Gumok', 'sans-serif';
         overflow-x: hidden;
         background-image: linear-gradient(90deg,#151515,#000);
     }
