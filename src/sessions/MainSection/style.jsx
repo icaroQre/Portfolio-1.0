@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import background from "../../assets/images/background2.jpg"
+import background from "../../assets/images/background.jpg"
 
 export const MainContainer = styled.div`
 
@@ -34,14 +34,15 @@ export const MainText = styled.div`
     }
 
     #name{
-        font-family: 'Poppins', sans-serif;
-        font-size: 5rem;
-        font-weight: 500;
+        
+        letter-spacing: 25px;
+        font-size: 8rem;
+        font-weight: 600;
         padding-bottom: 1.5rem;
         color: ${({ theme }) => theme.secondary}; 
 
         @media (max-width:1025px) {
-            font-size: 4rem;
+            font-size: 6rem;
             padding-bottom: 1rem;
         }
     }
@@ -60,13 +61,13 @@ const blinkCaret = keyframes`
 
 export const TypeWriter = styled.div`
 
-    p{
-        font-size: 2.5rem;
+    p{  
+        letter-spacing: 5px;
+        font-size: 3rem;
         color: ${({ theme }) => theme.secondary};
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         overflow: hidden;
-        border-right: .15em solid orange;
+        border-right: .15em solid white;
         white-space: nowrap;
         margin: 0 auto;
         animation: 

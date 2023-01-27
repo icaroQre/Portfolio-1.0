@@ -13,23 +13,23 @@ function AboutSection () {
         <AboutContainer visible={ menuVisible } >
             <div id="desktop">
             <AboutImage>
-                <SkillSwiper size="25vh" color="#000"/>
+                <SkillSwiper size="25vh" color="#fff"/>
             </AboutImage>
             </div>
             <AboutTextContainer>
                 <AboutTitle> &lt; Sobre mim /&gt; </AboutTitle>
                 <AboutTextFirst> 
-                    <p> Olá, meu nome é <Contrast text="Ícaro Queiroz Reccanello" color="#000"/>. Tenho 19 anos, atualmente estudante de <Contrast color="#000" text="Ciência da Computação"/> pela UENP (Universidade Estadual do Norte do Paraná),
-                    apaixonado por desenvolvimento e com o foco em <Contrast text="Front-End" color="#000"/> aqui você pode conhecer um pouco dos meus projetos. </p> 
+                    <p> Olá, meu nome é <Contrast text="Ícaro Queiroz Reccanello" color="#fff"/>. Tenho 19 anos, atualmente estudante de <Contrast color="#fff" text="Ciência da Computação"/> pela UENP (Universidade Estadual do Norte do Paraná),
+                    apaixonado por desenvolvimento e com o foco em <Contrast text="Front-End" color="#fff"/> aqui você pode conhecer um pouco dos meus projetos. </p> 
                 </AboutTextFirst>
                 <AboutTextSecond> 
-                    Conhecimento em <Contrast text="HTML5" color="#000"/>, <Contrast text="CSS3" color="#000"/>, <Contrast text="Java Script" color="#000"/> 
-                    e Frameworks e bibliotecas, como <Contrast text="React JS" color="#000"/> e <Contrast text="Styled-Components" color="#000"/>
+                    Conhecimento em <Contrast text="HTML5" color="#fff"/>, <Contrast text="CSS3" color="#fff"/>, <Contrast text="Java Script" color="#fff"/> 
+                    e Frameworks e bibliotecas, como <Contrast text="React JS" color="#fff"/> e <Contrast text="Styled-Components" color="#fff"/>
                 </AboutTextSecond>
             </AboutTextContainer>
             <div id="mobile">
             <AboutImage>
-                <SkillSwiper size="15vh" color="#000"/>
+                <SkillSwiper size="15vh" color="#fff"/>
             </AboutImage>
             </div>
         </AboutContainer>

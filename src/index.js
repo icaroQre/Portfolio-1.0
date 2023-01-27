@@ -6,6 +6,7 @@ import GlobalStyle from "./styles/GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import ResetCSS from './styles/ResetCSS';
 import { AuthProvider } from './providers/auth';
+import FontStyle from './styles/FontStyle';
 
 const theme = {
   primary: "#000000",
@@ -22,6 +23,7 @@ root.render(
     <ThemeProvider theme={theme}>
       <ResetCSS />
       <GlobalStyle />
+      <FontStyle />
       <AuthProvider>
         <App />
       </AuthProvider>

@@ -13,6 +13,7 @@ function App() {
       <Header />
       <MainSection />
       <AboutSection />
+      <TransitonSection />
       <ProjectSection />
       <TransitonSection />
       <ContactSection />

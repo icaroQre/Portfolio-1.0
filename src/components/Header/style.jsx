@@ -47,7 +47,7 @@ export const MenuStyled = styled.ul`
     flex-direction: row;
     margin: 0;
     padding: 0 10%;
-    font-weight: 600;
+    font-weight: 300;
     overflow: hidden;
     transition: all ease 0.5s;
 
@@ -71,7 +71,7 @@ export const MenuStyled = styled.ul`
         position: absolute;
         top: calc(68px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
-        background: rgba(11, 11, 11, 0.75);
+        background: rgba(0, 0, 0, 0.75);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10.4px);
         -webkit-backdrop-filter: blur(10.4px);

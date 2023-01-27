@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Gumok', sans-serif;
         overflow-x: hidden;
         background-image: linear-gradient(90deg,#151515,#000);
     }

@@ -8,10 +8,11 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
 
     p{
         margin-bottom: 32px;
+        font-weight: 300;
         font-family: 'Poppins', sans-serif;
     }
 `;

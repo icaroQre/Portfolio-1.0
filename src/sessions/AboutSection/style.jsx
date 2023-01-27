@@ -27,7 +27,6 @@ export const AboutContainer = styled.div`
     }
     }
 
-    background-color: #fff;
 `;
 
 export const AboutTextContainer = styled.div`
@@ -50,17 +49,17 @@ export const AboutTextContainer = styled.div`
 
 export const AboutTitle = styled.div`
 
-    font-family: 'Montserrat';
     margin-bottom: 5rem;
     padding: 0 10%;
-    color: ${({ theme }) => theme.primary};
-    font-size: 2.5rem;
-    font-weight: 500;
+    color: ${({ theme }) => theme.secondary};
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
 
     @media (max-width: 1025px) {
         margin-left: auto;
         margin-right: auto;
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 4rem;
     }
     
@@ -68,12 +67,12 @@ export const AboutTitle = styled.div`
 
 export const AboutTextFirst = styled.div`
 
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
-    color: ${({ theme }) => theme.textSecondary};
+    color: ${({ theme }) => theme.textPrimary};
     margin-bottom: 32px;
     font-size: 1.2rem;
 
@@ -85,12 +84,12 @@ export const AboutTextFirst = styled.div`
 
 export const AboutTextSecond = styled.div`
 
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
-    color: ${({ theme }) => theme.textSecondary};
+    color: ${({ theme }) => theme.textPrimary};
     font-size: 1.2rem;
 
     @media (max-width: 1025px) {
