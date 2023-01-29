@@ -36,14 +36,15 @@ export const MainText = styled.div`
     #name{
         
         font-family: 'Rajdhani', sans-serif;
-        font-size: 8rem;
-        font-weight: 500;
-        padding-bottom: 1.5rem;
+        font-size: 6rem;
+        font-weight: 600;
+        padding-bottom: 24px;
         color: ${({ theme }) => theme.secondary}; 
+        line-height: 4.5rem;
 
         @media (max-width:1025px) {
-            font-size: 6rem;
-            padding-bottom: 1rem;
+            font-size: 5rem;
+            padding-bottom: 20px;
         }
     }
 `;

@@ -18,10 +18,10 @@ function Header () {
             </MobileMenuStyled>
 
             <MenuStyled visible={ menuVisible }>
+                <li onClick={toggleMenu} visible={ menuVisible }> Home </li> 
                 <li onClick={toggleMenu} visible={ menuVisible }> Sobre </li> 
-                <li onClick={toggleMenu} visible={ menuVisible }> Habilidades </li> 
                 <li onClick={toggleMenu} visible={ menuVisible }> Projetos </li> 
-                <li onClick={toggleMenu} visible={ menuVisible }> Ver o código </li> 
+                <li onClick={toggleMenu} visible={ menuVisible }> Git Hub </li> 
                 <li onClick={toggleMenu} visible={ menuVisible }> Contato </li> 
             </MenuStyled>
         </HeaderStyled>

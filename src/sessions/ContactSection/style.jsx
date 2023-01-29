@@ -14,6 +14,11 @@ export const Container = styled.div`
         margin-bottom: 32px;
         font-weight: 300;
         font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+
+        @media (max-width: 1025px) {
+            font-size: 14px;
+        }
     }
 `;
 
@@ -24,16 +29,21 @@ export const Text = styled.div`
     align-items: center;
     justify-content: center;
     color: ${({ theme }) => theme.textPrimary};
-    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     
     p{
-        font-size: 1rem;
+        font-size: 18px;
         margin-bottom: 1rem;
+
+        @media (max-width: 1025px) {
+            font-size: 14px;
+        }
     }
 `;
 
 export const EmailStyled = styled.div`
+
+    font-size: 24px;
 
     @media (max-width: 1025px) {
         display: flex;
@@ -41,17 +51,18 @@ export const EmailStyled = styled.div`
         align-items: center;
         justify-content: center;
         font-family: 'Poppins', sans-serif;
+        font-size: 24px;
     }
 
 `;
 
 export const ContactPhoto = styled.img`
 
-    margin: 64px;
+    margin: 6rem;
     border-radius: 50%;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     transition: transform ease 1s;
 
     :hover{
@@ -59,8 +70,8 @@ export const ContactPhoto = styled.img`
     }
 
     @media (max-width: 1025px) {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
 `;

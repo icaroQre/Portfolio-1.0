@@ -10,6 +10,7 @@ export const HeaderStyled = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 
     @media (max-width: 1025px) {
         flex-direction: column;
