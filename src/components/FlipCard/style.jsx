@@ -39,10 +39,9 @@ align-items: center;
 justify-content: center;
 border-radius: 1rem;
 overflow: hidden;
--webkit-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
--moz-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-
+-webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+-moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
 `;
 
 export const Back = styled.div`
@@ -57,10 +56,9 @@ align-items: center;
 justify-content: space-evenly;
 flex-direction: column;
 border-radius: 1rem;
--webkit-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
--moz-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-
+-webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+-moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
 `;
 
 export const Image = styled.img`
@@ -69,18 +67,20 @@ border-radius: 10px;
 `;
 
 export const Description = styled.p`
-font-size: 1em;
+font-size: 14px;
 text-align: center;
 padding: 20px;
 color: #FFF;
-font-weight: 300;
+font-weight: 200;
+font-family: 'Poppins', sans-serif;
 `;
 
 export const Name = styled.p`
 
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 500;
     color: #FFF;
+    font-family: 'Poppins', sans-serif;
 
 `;
 
@@ -90,9 +90,10 @@ export const LinkStyled = styled.a`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 
     a{
-        font-weight: 600;
+        font-weight: 500;
         padding: 4px;
         color: #FFF;
         text-decoration: none;

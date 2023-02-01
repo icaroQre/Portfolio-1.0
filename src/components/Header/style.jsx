@@ -32,7 +32,7 @@ export const MobileMenuStyled = styled.div`
 
     @media (max-width: 1025px) {
         display: flex;
-        padding: 16px;
+        padding: 8px;
         cursor: pointer;
         transition: all ease 0.5s;
     }
@@ -70,7 +70,7 @@ export const MenuStyled = styled.ul`
     @media (max-width: 1025px) {
 
         position: absolute;
-        top: calc(68px);
+        top: calc(52px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
         background-color: ${({theme})=> theme.colors.tertiary};
         flex-direction: column;

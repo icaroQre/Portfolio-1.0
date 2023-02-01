@@ -65,9 +65,9 @@ export const ContactPhoto = styled.img`
     width: 250px;
     height: 250px;
     transition: transform ease 1s;
-    -webkit-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-    -moz-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
-    box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+    -moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
+    box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.72);
 
     :hover{
         transform: rotateZ(360deg);
