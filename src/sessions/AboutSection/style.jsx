@@ -4,8 +4,8 @@ export const AboutContainer = styled.div`
     
     display: flex;
     flex-direction: row;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
     @media (max-width: 1025px) {
         flex-direction: column;
@@ -52,7 +52,7 @@ export const AboutTitle = styled.div`
     font-family: 'Rajdhani', sans-serif;
     margin-bottom: 4rem;
     padding: 0 10%;
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 32px;
     font-weight: 900;
 
@@ -61,21 +61,20 @@ export const AboutTitle = styled.div`
         margin-right: auto;
         font-size: 24px;
         margin-bottom: 2rem;
-        font-weight: bold;
+        font-weight: 900;
     }
     
 `;
 
 export const AboutTextFirst = styled.div`
 
-    font-weight: 300;
     font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
-    color: ${({ theme }) => theme.textPrimary};
     margin-bottom: 1rem;
     font-size: 16px;
+    font-weight: 500;
 
     @media (max-width: 1025px) {
         font-size: 14px;
@@ -85,14 +84,13 @@ export const AboutTextFirst = styled.div`
 
 export const AboutTextSecond = styled.div`
 
-    font-weight: 300;
     font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     letter-spacing: 0.1vw;
     line-height: 2rem;
-    color: ${({ theme }) => theme.textPrimary};
     font-size: 16px;
     margin-bottom: 4rem;
+    font-weight: 500;
 
     @media (max-width: 1025px) {
         font-size: 14px;

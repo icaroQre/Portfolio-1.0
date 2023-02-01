@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
 
-    background: rgba(11, 11, 11, 0.7);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -11,12 +10,13 @@ export const HeaderStyled = styled.header`
     top: 0;
     left: 0;
     z-index: 999;
+    background-color: ${({ theme }) => theme.colors.tertiary};
+    transition: all ease .4s;
 
     @media (max-width: 1025px) {
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
-        background-color: transparent;
         background-image: none;
     }
 `;
@@ -48,22 +48,22 @@ export const MenuStyled = styled.ul`
     flex-direction: row;
     margin: 0;
     padding: 0 10%;
-    font-weight: 300;
     overflow: hidden;
     transition: all ease 0.5s;
 
     li{
+        font-weight: 500;
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         text-decoration: none;
         padding: 16px 24px;
         outline: none;
-        color: ${({theme}) => theme.secondary};
+        color: #FFF;
         transition: all ease 0.5s;
         border-bottom: solid transparent 3px;
         :hover{
             cursor: pointer;
-            border-color: ${({ theme }) => theme.secondary};
+            border-color: #FFF;
         }
     }
 
@@ -72,10 +72,7 @@ export const MenuStyled = styled.ul`
         position: absolute;
         top: calc(68px);
         transform: translateX(${({ visible }) => visible ? "0" : "100vw" });
-        background: rgba(0, 0, 0, 0.75);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10.4px);
-        -webkit-backdrop-filter: blur(10.4px);
+        background-color: ${({theme})=> theme.colors.tertiary};
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
@@ -83,14 +80,15 @@ export const MenuStyled = styled.ul`
         width: 100vw;
         height: calc(100vh - 68px);
         padding:0;
+        border-top: solid ${({ theme }) => theme.colors.white} 2px;
 
         li{
-            color: ${({ theme }) => theme.secondary};
+            color: #${({ theme }) => theme.colors.white};
             width: 100vw;
             
             :hover{
-                background-color: ${({ theme }) => theme.secondary};
-                color: ${({ theme }) => theme.primary};
+                background-color: ${({theme})=> theme.colors.secondary};
+                color: ${({theme})=> theme.colors.primary};
             }
         }
     }

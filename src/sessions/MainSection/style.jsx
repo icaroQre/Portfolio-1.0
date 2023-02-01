@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import background from "../../assets/images/background.jpg"
 
 export const MainContainer = styled.div`
 
@@ -9,8 +8,6 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-image: url(${background});
-    background-size: cover;
 
     @media (max-width: 1025px) {
         flex-direction: column;
@@ -20,13 +17,17 @@ export const MainContainer = styled.div`
 export const MainText = styled.div`
 
     width: 50vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    div{
+    @media (max-width:1025px) {
+            width: 100vw;
+        }
+
+    .container{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -38,13 +39,27 @@ export const MainText = styled.div`
         font-family: 'Rajdhani', sans-serif;
         font-size: 6rem;
         font-weight: 600;
-        padding-bottom: 24px;
-        color: ${({ theme }) => theme.secondary}; 
+        padding-bottom: 24px; 
         line-height: 4.5rem;
+        color: ${({ theme }) => theme.colors.secondary};
 
         @media (max-width:1025px) {
             font-size: 5rem;
             padding-bottom: 20px;
+            padding-left: 15%;
+        }
+    }
+
+    .switch-icon-mobile{
+        font-size: 175px;
+        color: ${({ theme }) => theme.colors.text};
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 1025px) {
+            font-size: 100px;
+            margin-top: 6rem;
+            display: flex;
         }
     }
 `;
@@ -57,15 +72,21 @@ const typing = keyframes`
 `;
 const blinkCaret = keyframes`
     from, to { border-color: transparent }
-    50% { border-color: #ffffff }
+    50% { 
+        border-color: orange        
+        }
 `;
 
 export const TypeWriter = styled.div`
 
+    @media (max-width:1025px) {
+            padding-left: 15%;
+        }
+            
     p{  
         font-family: 'Rajdhani', sans-serif;
         font-size: 3rem;
-        color: ${({ theme }) => theme.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
         font-weight: 300;
         overflow: hidden;
         border-right: .15em solid white;
@@ -85,10 +106,22 @@ export const MainImage = styled.div`
 
     width: 50vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 1025px) {
-        height: auto;
-        width: 100vw;
+        display: none;
+    }
+
+    .switch-icon{
+        font-size: 175px;
+        color: ${({ theme }) => theme.colors.text};
+        cursor: pointer;
+
+        @media (max-width: 1025px) {
+            display: none;
+    }
     }
 `;
 
@@ -115,4 +148,8 @@ export const ArrowDownStyled = styled.div`
     z-index: 0;
     color: ${({ theme }) => theme.textPrimary};
     visibility: ${({ visible }) => visible ? "hidden" : "visible" };
+
+     @media (max-height: 500px) {
+        display: none;
+     }
 `;

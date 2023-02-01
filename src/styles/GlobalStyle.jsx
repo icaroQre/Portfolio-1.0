@@ -23,7 +23,9 @@ const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Rajdhani', sans-serif;
         overflow-x: hidden;
-        background-image: linear-gradient(90deg,#151515,#000);
+        transition: all ease .4s;
+        background: ${({theme}) => theme.colors.background};
+        color: ${({theme}) => theme.colors.text};
     }
 
 `;

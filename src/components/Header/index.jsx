@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { HeaderStyled, MenuStyled, MobileMenuStyled } from "./style";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AuthContext } from "../../providers/auth";
+import { useTheme } from "styled-components";
 
 function Header () {
 
@@ -11,8 +12,10 @@ function Header () {
         setMenuVisible(!menuVisible);
     }
 
+    const theme = useTheme()
+
     return(
-        <HeaderStyled>
+        <HeaderStyled theme={theme}>
             <MobileMenuStyled onClick={toggleMenu} visible={ menuVisible }>
                 <AiOutlineMenu style={{fontSize: "36px", color: "#FFFFFF", stroke: "#000000", strokeWidth: "20px" }} />
             </MobileMenuStyled>

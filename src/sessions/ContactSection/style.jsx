@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +15,7 @@ export const Container = styled.div`
         font-weight: 300;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
+        color: ${({ theme }) => theme.colors.text};
 
         @media (max-width: 1025px) {
             font-size: 14px;
@@ -28,7 +29,7 @@ export const Text = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: ${({ theme }) => theme.textPrimary};
+    color: ${({ theme }) => theme.colors.text};
     font-family: 'Poppins', sans-serif;
     
     p{
@@ -64,6 +65,9 @@ export const ContactPhoto = styled.img`
     width: 250px;
     height: 250px;
     transition: transform ease 1s;
+    -webkit-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
+    box-shadow: 0px 3px 37px 10px rgba(0,0,0,0.46);
 
     :hover{
         transform: rotateZ(360deg);
@@ -87,6 +91,11 @@ export const ContactIcons = styled.div`
     li{
         list-style: none;
         transition: all ease-out 0.3s;
+
+        .contact-icon{
+            color: ${({ theme }) => theme.colors.secondary};
+            font-size: 36px;
+        }
 
         :hover{
             cursor: pointer;

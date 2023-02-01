@@ -4,7 +4,7 @@ import { ContrastStyled } from "./style";
 
 function Contrast (props) {
     return (
-        <ContrastStyled style={{color: props.color}} > { props.text } </ContrastStyled>
+        <ContrastStyled> { props.text } </ContrastStyled>
     )
 }
 
