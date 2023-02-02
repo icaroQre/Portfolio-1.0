@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 
@@ -97,5 +97,6 @@ export const LinkStyled = styled.a`
         padding: 4px;
         color: #FFF;
         text-decoration: none;
+        cursor: pointer;
     }
 `;

@@ -6,6 +6,8 @@ export const AboutContainer = styled.div`
     flex-direction: row;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 1025px) {
         flex-direction: column;
@@ -33,13 +35,12 @@ export const AboutContainer = styled.div`
 
 export const AboutTextContainer = styled.div`
     
-    width: 50vw;
-    max-height: 100vh;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
+    
     @media (max-width: 1025px) {
         height: auto;
         width: 100vw;
@@ -100,15 +101,16 @@ export const AboutTextSecond = styled.div`
 
 export const AboutImage = styled.div`
 
-    width: 50vw;
-    height: 100vh;
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 24rem 0;
 
     @media (max-width: 1025px) {
         height: 15vh;
         width: 100vw;
+        margin: 0;
     }
 
 `;

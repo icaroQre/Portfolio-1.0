@@ -1,16 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { MainContainer, MainImage, MainText, TypeWriter, ArrowDownStyled } from "./style"
 import { RiArrowDownSLine } from "react-icons/ri"
 import { AuthContext } from "../../providers/auth"
 import { ImSwitch } from "react-icons/im"
 import { ThemeStateContext } from "../../providers/theme";
-import { useTheme } from "styled-components";
 
 function MainSection () {
 
     const { menuVisible } = useContext(AuthContext);
 
-    const { themeState, setThemeState } = useContext(ThemeStateContext)
+    const { setThemeState } = useContext(ThemeStateContext)
 
     function toggleThemeState () {
         setThemeState(themeState => themeState === 'dark' ? 'light' : 'dark')
@@ -18,7 +17,7 @@ function MainSection () {
 
     return(
         <>
-        <MainContainer>
+        <MainContainer id="home">
             <MainText>
                 <div className="container">
                     <p id="name"> Ícaro Queiroz </p>

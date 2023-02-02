@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 10rem);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +39,7 @@ export const ProjectTitle = styled.div`
         font-size: 24px;
         font-weight: 900;
         padding-top: 4rem;
-        padding-bottom: 0rem;
+        padding-bottom: 4rem;
     }
 
     .desc{

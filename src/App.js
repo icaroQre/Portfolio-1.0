@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Header from "./components/Header";
 import AboutSection from "./sessions/AboutSection";
 import ContactSection from "./sessions/ContactSection";
@@ -9,10 +9,16 @@ import GlobalStyle from "./styles/GlobalStyle";
 import { ThemeStateContext } from './providers/theme';
 import themes from "./styles/themes"
 import { ThemeProvider } from 'styled-components';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 function App() {
 
   const { themeState } = useContext(ThemeStateContext)
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     

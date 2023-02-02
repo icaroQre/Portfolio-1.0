@@ -10,13 +10,13 @@ function AboutSection () {
 
     return(
 
-        <AboutContainer visible={ menuVisible } >
+        <AboutContainer visible={ menuVisible } id="about"  data-aos="fade-left" data-aos-duration="2000">
             <div id="desktop">
             <AboutImage>
                 <SkillSwiper size="25vh" />
             </AboutImage>
             </div>
-            <AboutTextContainer>
+            <AboutTextContainer >
                 <AboutTitle> &lt; Sobre mim /&gt; </AboutTitle>
                 <AboutTextFirst> 
                     <p> Olá, meu nome é <Contrast text="Ícaro Queiroz Reccanello"/>. Tenho 19 anos, atualmente estudante de <Contrast text="Ciência da Computação"/> pela UENP (Universidade Estadual do Norte do Paraná),

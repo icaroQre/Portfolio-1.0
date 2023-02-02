@@ -61,6 +61,11 @@ export const MenuStyled = styled.ul`
         color: #FFF;
         transition: all ease 0.5s;
         border-bottom: solid transparent 3px;
+        
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
         :hover{
             cursor: pointer;
             border-color: #FFF;
@@ -78,7 +83,7 @@ export const MenuStyled = styled.ul`
         justify-content: space-evenly;
         text-align: center;
         width: 100vw;
-        height: calc(100vh - 68px);
+        height: calc(100vh - 52px);
         padding:0;
         border-top: solid ${({ theme }) => theme.colors.white} 2px;
 
@@ -87,7 +92,7 @@ export const MenuStyled = styled.ul`
             width: 100vw;
             
             :hover{
-                background-color: ${({theme})=> theme.colors.secondary};
+                background-color: ${({theme})=> theme.colors.white};
                 color: ${({theme})=> theme.colors.primary};
             }
         }

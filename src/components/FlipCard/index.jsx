@@ -18,8 +18,8 @@ const FlipCard = ({ image, description, name, github, web }) => {
                 { description }
             </Description>    
             <LinkStyled>
-                <a> GitHub </a>
-                <a> Vizualizar Página </a>
+                <a href={github}> GitHub </a>
+                <a href={web}> Vizualizar Página </a>
             </LinkStyled>  
         </Back>
       </Card>

@@ -8,7 +8,7 @@ import photo from "../../assets/images/profile.jpg";
 
 function ContactSection () {
     return(
-        <Container>
+        <Container id="contact" data-aos="fade-right">
 
             <Text>
                 <p> Me envie um e-mail em: </p>

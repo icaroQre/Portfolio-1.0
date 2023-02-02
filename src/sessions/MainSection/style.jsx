@@ -118,6 +118,10 @@ export const MainImage = styled.div`
         font-size: 175px;
         color: ${({ theme }) => theme.colors.text};
         cursor: pointer;
+        transition: all ease-in-out .4s;
+        :hover{
+            color: ${({ theme }) => theme.colors.secondary}; 
+        }
 
         @media (max-width: 1025px) {
             display: none;
