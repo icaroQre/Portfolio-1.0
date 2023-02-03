@@ -3,14 +3,15 @@ import SkillSwiper from "../../components/SkillSwiper";
 import { AboutContainer, AboutTextFirst, AboutTextSecond, AboutImage, AboutTextContainer, AboutTitle, } from "./style";
 import { AuthContext } from "../../providers/auth";
 import Contrast from "../../components/Contrast";
+import Fade from 'react-reveal/Fade';
 
 function AboutSection () {
 
     const { menuVisible } = useContext(AuthContext);
 
     return(
-
-        <AboutContainer visible={ menuVisible } id="about"  data-aos="fade-left" data-aos-duration="2000">
+        <AboutContainer visible={ menuVisible } id="about" >
+                <Fade bottom>
             <div id="desktop">
             <AboutImage>
                 <SkillSwiper size="25vh" />
@@ -27,6 +28,7 @@ function AboutSection () {
                     e Frameworks e bibliotecas, como <Contrast text="React JS" /> e <Contrast text="Styled-Components" />
                 </AboutTextSecond>
             </AboutTextContainer>
+            </Fade>
             <div id="mobile">
             <AboutImage>
                 <SkillSwiper size="15vh" />

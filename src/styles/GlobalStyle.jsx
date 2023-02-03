@@ -23,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Rajdhani', sans-serif;
         overflow-x: hidden;
-        transition: all ease .4s;
         background: ${({theme}) => theme.colors.background};
         color: ${({theme}) => theme.colors.text};
     }

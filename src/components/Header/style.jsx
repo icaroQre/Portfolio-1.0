@@ -12,6 +12,7 @@ export const HeaderStyled = styled.header`
     z-index: 999;
     background-color: ${({ theme }) => theme.colors.tertiary};
     transition: all ease .4s;
+    opacity: 1;
 
     @media (max-width: 1025px) {
         flex-direction: column;
