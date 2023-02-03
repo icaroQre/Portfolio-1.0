@@ -11,12 +11,13 @@ function AboutSection () {
 
     return(
         <AboutContainer visible={ menuVisible } id="about" >
-                <Fade bottom>
+                
             <div id="desktop">
             <AboutImage>
                 <SkillSwiper size="25vh" />
             </AboutImage>
             </div>
+            <Fade top>
             <AboutTextContainer >
                 <AboutTitle> &lt; Sobre mim /&gt; </AboutTitle>
                 <AboutTextFirst> 
