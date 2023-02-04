@@ -3,21 +3,19 @@ import SkillSwiper from "../../components/SkillSwiper";
 import { AboutContainer, AboutTextFirst, AboutTextSecond, AboutImage, AboutTextContainer, AboutTitle, } from "./style";
 import { AuthContext } from "../../providers/auth";
 import Contrast from "../../components/Contrast";
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 function AboutSection () {
-
     const { menuVisible } = useContext(AuthContext);
 
     return(
-        <AboutContainer visible={ menuVisible } id="about" >
-                
+        <AboutContainer visible={ menuVisible } id="about" >           
             <div id="desktop">
             <AboutImage>
                 <SkillSwiper size="25vh" />
             </AboutImage>
             </div>
-            <Fade top>
+            <Fade direction="left" duration={2000}>
             <AboutTextContainer >
                 <AboutTitle> &lt; Sobre mim /&gt; </AboutTitle>
                 <AboutTextFirst> 

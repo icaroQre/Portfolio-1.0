@@ -5,13 +5,14 @@ import { FaDiscord } from "react-icons/fa"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { Container, Text, ContactPhoto, ContactIcons, EmailStyled } from "./style"
 import photo from "../../assets/images/profile.jpg";
-import Fade from 'react-reveal/Fade';
+import { Fade, Flip, Roll } from "react-awesome-reveal";
 
 function ContactSection () {
     return(
+        <Fade>
         <Container id="contact" >
 
-            <Fade left>
+            <Fade>
             <Text>
                 <p> Me envie um e-mail em: </p>
                 <EmailStyled>
@@ -19,13 +20,14 @@ function ContactSection () {
                     <Contrast text="@gmail.com"/>
                 </EmailStyled>
             </Text>
+            </Fade>
             
-            
+            <Roll duration={2000}>
             <ContactPhoto src={photo}/>
+            </Roll>
 
             <p>Ou entre em contato por:</p>
 
-            
             <ContactIcons>
                 <li> <a href="https://www.linkedin.com/in/%C3%ADcaro-queiroz-reccanello-9b903a235/"> <AiFillLinkedin className="contact-icon"/> </a> </li>
                 <li> <FaDiscord className="contact-icon" /> </li>
@@ -33,8 +35,8 @@ function ContactSection () {
                 <li>  <a href="https://api.whatsapp.com/send?phone=5543999694177"> <IoLogoWhatsapp className="contact-icon"/> </a> </li>
                 <li> <a href="https://www.instagram.com/icaroqre"> <AiFillInstagram className="contact-icon" /> </a> </li>
             </ContactIcons>
-            </Fade>
         </Container>
+        </Fade>
     )
 }
 
