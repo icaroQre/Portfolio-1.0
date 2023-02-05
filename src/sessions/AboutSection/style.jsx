@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-import { keyframes } from "@emotion/react";
-
-const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(-200px, -100px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`;
-
 export const AboutContainer = styled.div`
     
     display: flex;

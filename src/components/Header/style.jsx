@@ -20,6 +20,11 @@ export const HeaderStyled = styled.header`
         justify-content: center;
         background-image: none;
     }
+
+    a{
+            text-decoration: none;
+            color: #FFF;
+        }
 `;
 
 export const MobileMenuStyled = styled.div`
@@ -63,10 +68,6 @@ export const MenuStyled = styled.ul`
         transition: all ease 0.5s;
         border-bottom: solid transparent 3px;
         
-        a{
-            text-decoration: none;
-            color: #FFF;
-        }
         :hover{
             cursor: pointer;
             border-color: #FFF;

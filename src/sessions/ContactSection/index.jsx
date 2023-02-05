@@ -5,7 +5,7 @@ import { FaDiscord } from "react-icons/fa"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { Container, Text, ContactPhoto, ContactIcons, EmailStyled } from "./style"
 import photo from "../../assets/images/profile.jpg";
-import { Fade, Flip, Roll } from "react-awesome-reveal";
+import { Fade, Roll } from "react-awesome-reveal";
 
 function ContactSection () {
     return(

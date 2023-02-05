@@ -5,7 +5,7 @@ import localizeHome from "../../assets/images/localizeHome.png"
 import todoListHome from "../../assets/images/todoListHome.png"
 import instagramHome from "../../assets/images/instagramHome.png"
 import FlipCard from "../../components/FlipCard";
-import { Bounce, Fade, Rotate, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function ProjectSection () {
 
