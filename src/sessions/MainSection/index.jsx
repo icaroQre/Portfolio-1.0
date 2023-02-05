@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MainContainer, MainImage, MainText, TypeWriter, ArrowDownStyled } from "./style"
 import { RiArrowDownSLine } from "react-icons/ri"
 import { AuthContext } from "../../providers/auth"
-import { ImSwitch } from "react-icons/im"
+import { BsPower } from "react-icons/bs"
 import { ThemeStateContext } from "../../providers/theme";
 
 function MainSection () {
@@ -23,10 +23,10 @@ function MainSection () {
                     <p id="name"> Ícaro Queiroz </p>
                     <TypeWriter id="title"> <p>&lt; Desenvolvedor /&gt;</p> </TypeWriter>
                 </div>
-                <ImSwitch onClick={ toggleThemeState } className="switch-icon-mobile" />
+                <BsPower onClick={ toggleThemeState } className="switch-icon-mobile" />
             </MainText>
             <MainImage>
-                <ImSwitch onClick={ toggleThemeState } className="switch-icon" />
+                <BsPower onClick={ toggleThemeState } className="switch-icon" />
             </MainImage>
             <ArrowDownStyled visible={ menuVisible }>
                 <RiArrowDownSLine style={{fontSize: "36px"}}/>

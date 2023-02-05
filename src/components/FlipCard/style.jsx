@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 
-width: 70vw;
-height: 70vw;
+width: 80vw;
+height: 80vw;
 max-width: 350px;
 max-height: 350px;
 display: flex;
@@ -14,7 +14,7 @@ opacity: 1;
 perspective: 1000px;
 margin: 0 auto;
 position: relative;
-margin: 2rem;
+margin: 1rem;
 
 `;
 

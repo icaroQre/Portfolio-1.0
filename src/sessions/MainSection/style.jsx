@@ -38,7 +38,7 @@ export const MainText = styled.div`
         
         font-family: 'Rajdhani', sans-serif;
         font-size: 6rem;
-        font-weight: 600;
+        font-weight: 500;
         padding-bottom: 24px; 
         line-height: 4.5rem;
         color: ${({ theme }) => theme.colors.secondary};
@@ -116,12 +116,9 @@ export const MainImage = styled.div`
 
     .switch-icon{
         font-size: 175px;
-        color: ${({ theme }) => theme.colors.text};
+        color: ${({ theme }) => theme.colors.secondary};
         cursor: pointer;
         transition: all ease-in-out .4s;
-        :hover{
-            color: ${({ theme }) => theme.colors.secondary}; 
-        }
 
         @media (max-width: 1025px) {
             display: none;
